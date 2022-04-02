@@ -1,0 +1,49 @@
+name: Bug Report
+description: Unwanted behavior that does not match configuration.
+labels: ["Bug"]
+body:
+  - type: input
+    attributes:
+      label: Server
+      description: Which community server the bug is on.
+      placeholder: Survival
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+      description: A clear and concise description of what you expected.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: What to do in order to reproduce this issue.
+      placeholder: |
+        Step 1: ..
+        Step 2: ..
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: Any other info you want to provide, such as screenshots.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Let's make sure this report is valid.
+      options:
+        - label: I have checked the Slabserver-Bugs repo to make sure this is not reported, or marked as "Won't Fix".
+          required: true
