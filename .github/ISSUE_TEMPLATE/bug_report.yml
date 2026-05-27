@@ -2,24 +2,29 @@ name: Bug Report
 description: Unwanted behavior that does not match configuration.
 labels: ["Bug"]
 body:
-  - type: input
+  - type: dropdown
+    id: servers
     attributes:
-      label: Server
-      description: Which community server the bug is on.
-      placeholder: Survival
+      label: Which servers are you seeing the bug on?
+      multiple: true
+      options:
+        - Survival
+        - Resource
+        - Passage
+        - Creative
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Describe the Bug
+      label: Describe the bug
       description: A clear and concise description of what the bug is, and the expected behaviour.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Steps to Reproduce
+      label: Steps to reproduce
       description: What to do in order to reproduce this issue.
       placeholder: |
         Step 1: ...
@@ -29,7 +34,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional Info
+      label: Additional info
       description: Any other info you want to provide, such as screenshots or videos.
     validations:
       required: false
