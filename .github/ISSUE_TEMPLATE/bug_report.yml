@@ -12,38 +12,31 @@ body:
 
   - type: textarea
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is, and the expected behaviour.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Expected behaviour
-      description: A clear and concise description of what you expected.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce
       description: What to do in order to reproduce this issue.
       placeholder: |
-        Step 1: ..
-        Step 2: ..
+        Step 1: ...
+        Step 2: ...
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Additional info
-      description: Any other info you want to provide, such as screenshots.
+      label: Additional Info
+      description: Any other info you want to provide, such as screenshots or videos.
     validations:
       required: false
   - type: checkboxes
     attributes:
       label: Checklist
-      description: Let's make sure this report is valid.
+      description: Let's make sure this report is valid
       options:
         - label: I have checked the Slabserver-Bugs repo to make sure this is not reported, or marked as "Won't Fix".
           required: true
