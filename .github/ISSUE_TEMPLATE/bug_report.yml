@@ -1,5 +1,5 @@
-name: Bug Report
-description: Create a new issue for gameplay bugs on Slaserver
+name: Bug report
+description: Create a new issue for gameplay bugs on Slabserver
 labels: ["Bug"]
 body:
   - type: dropdown
