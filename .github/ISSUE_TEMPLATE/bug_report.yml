@@ -1,5 +1,5 @@
 name: Bug Report
-description: Unwanted behavior that does not match configuration.
+description: Create a new issue for gameplay bugs on Slaserver
 labels: ["Bug"]
 body:
   - type: dropdown
